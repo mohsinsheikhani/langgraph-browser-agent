@@ -37,12 +37,18 @@ LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=browser-agent
 ```
 
-## Usage
-
-Run the agent:
+4. Run the agent:
 
 ```bash
 uv run main.py
 ```
 
 The Gradio interface will launch in your browser for chatting with the agent.
+
+## Usage
+
+![langgraph-agent-chat-Mohsin Sheikhani](https://github.com/user-attachments/assets/7a6e85d5-9bc6-4788-9953-74e50f9bc3c8)
+
+![push-notification-via-langgraph-Mohsin Sheikhani](https://github.com/user-attachments/assets/0ac3b773-be86-4f56-b036-27cb6531ed66)
+
+
