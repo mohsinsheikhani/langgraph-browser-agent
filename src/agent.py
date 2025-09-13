@@ -7,7 +7,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from src.config import Config
-from src.tools import get_push_tool
+from src.tools import get_push_tool, get_browser_tools
 
 
 class State(TypedDict):
@@ -25,9 +25,10 @@ class BrowserAgent:
         self.graph = self._build_graph()
 
     def _setup_tools(self):
-        """Initialize tools for the agent."""
+        """Initialize all tools for the agent."""
+        browser_tools = get_browser_tools()
         push_tool = get_push_tool()
-        return [push_tool]
+        return browser_tools + [push_tool]
 
     def _build_graph(self):
         """Build the LangGraph workflow."""

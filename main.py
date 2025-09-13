@@ -1,9 +1,5 @@
-import nest_asyncio
 import gradio as gr
 from src.agent import BrowserAgent
-
-# Apply nest_asyncio for Jupyter/async compatibility
-nest_asyncio.apply()
 
 
 def main():
